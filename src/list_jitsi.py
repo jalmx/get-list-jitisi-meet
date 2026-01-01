@@ -56,7 +56,7 @@ def save_csv(list_to_save):
         print(HELP)
         exit(1)
 
-    name_csv = f"lista_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.csv"
+    name_csv = f'lista_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.csv'
 
     with open(name_csv, mode="+w", encoding="utf-8") as list_csv:
         file_csv = csv.writer(list_csv)
